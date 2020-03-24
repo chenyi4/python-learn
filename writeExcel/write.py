@@ -28,9 +28,11 @@ def dowload(url, fileName):
         data = response.read()
         t = int(time.time() * 1000)
         os.mkdir("download/"+fileName)
-        name = filePath + '%d'%t+".jpg"
+        name = filePath +fileName+"/"+ '%d'%t+".jpg"
+        print(name)
         with open(name, 'wb') as code:
             code.write(data)
+            print('finish')
 
 
 for sheet in sheets:        # 循环表
