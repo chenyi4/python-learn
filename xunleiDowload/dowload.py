@@ -1,4 +1,5 @@
 import os
+import time
 
 #下载的目录
 save_path = "D:/迅雷下载" 
@@ -19,6 +20,7 @@ def check_end(fiename):
 
 isFinish = not check_end(fileNames)
 isExist = not check_start(fileNames)
+time.sleep(300)
 if(isExist):
     #如果这个任务不存在
     print('开始')
