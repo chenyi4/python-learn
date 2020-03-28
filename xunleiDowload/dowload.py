@@ -33,7 +33,7 @@ def check_end(fiename):
     return os.path.exists(os.path.join(save_path,fiename))
 
 
-time.sleep(0)
+time.sleep(500)
 
 def downloadFile(downUrl): 
     fileNames = get_filename(downUrl)
